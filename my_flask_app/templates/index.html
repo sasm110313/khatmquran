@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ختم قرآن آنلاین</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>ختم قرآن آنلاین</h1>
+        <div id="text-box">
+            <p id="aya-num" style="margin: 10px;">التماس دعا</p>
+            <p id="sura" style="margin: 10px;">برای شروع تلاوت روی دکمه زیر بزنید</p>
+            <p id="khatm-number" style="margin: 10px;"></p>
+        </div>
+        <div id="aya-box">
+            <p id="aya" class="welcome-message">خوش آمدید! برای شروع تلاوت روی دکمه زیر بزنید.</p>
+        </div>
+        <button id="next-aya-btn" class="btn btn-primary btn-lg mt-4">شروع تلاوت</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
