@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آیه تصادفی قرآن</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="verse-box">
+            <p class="verse">{{ aya_text }}</p>
+            <p class="sura">{{ sura_name }} - آیه شماره {{ aya_index }}</p>
+        </div>
+        <form action="{{ url_for('index') }}" method="get">
+            <button type="submit">نمایش آیه تصادفی</button>
+        </form>
+    </div>
+</body>
+</html>
